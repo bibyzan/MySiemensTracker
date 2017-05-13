@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Siemens Sans Black.ttf">
+            <string>SiemensSans-Black</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Tracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fCx-7l-h3t">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="7LB-9P-yI7"/>
+                                    <constraint firstAttribute="width" constant="200" id="erp-7Z-H4N"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Update Action"/>
+                                <connections>
+                                    <action selector="actionTapped:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="ohd-6W-Uqc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIi-Ji-6Mn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="maP-i4-Nb5"/>
+                                    <constraint firstAttribute="width" constant="200" id="mdx-T6-8pW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="morning:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lj0-5E-6Za">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="4Lp-i8-pUi"/>
+                                    <constraint firstAttribute="height" constant="21" id="jAF-eA-tZP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lunch: " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ar-iC-g4V">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="0Cs-iy-hPN"/>
+                                    <constraint firstAttribute="height" constant="21" id="YrA-KF-4Y4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Siemens Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dac-LO-WuN">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="EY1-nl-hx0"/>
+                                    <constraint firstAttribute="width" constant="200" id="TEh-gO-g3n"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SiemensSans-Black" family="Siemens Sans Black" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Lj0-5E-6Za" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="4dA-Pk-A9a"/>
+                            <constraint firstItem="Lj0-5E-6Za" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="15" id="6N2-wn-3X1"/>
+                            <constraint firstItem="pIi-Ji-6Mn" firstAttribute="top" secondItem="fCx-7l-h3t" secondAttribute="bottom" constant="8" id="6iU-cw-GWB"/>
+                            <constraint firstItem="8ar-iC-g4V" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leadingMargin" id="7EG-1w-VnN"/>
+                            <constraint firstItem="Dac-LO-WuN" firstAttribute="centerX" secondItem="fCx-7l-h3t" secondAttribute="centerX" id="9PD-wY-LAj"/>
+                            <constraint firstItem="pIi-Ji-6Mn" firstAttribute="centerX" secondItem="fCx-7l-h3t" secondAttribute="centerX" id="DYj-7A-xkg"/>
+                            <constraint firstItem="fCx-7l-h3t" firstAttribute="trailing" secondItem="S3S-Oj-5AN" secondAttribute="trailingMargin" id="FEH-PV-bjN"/>
+                            <constraint firstItem="8ar-iC-g4V" firstAttribute="top" secondItem="Lj0-5E-6Za" secondAttribute="bottom" constant="21" id="bYq-f0-qU4"/>
+                            <constraint firstItem="fCx-7l-h3t" firstAttribute="centerY" secondItem="S3S-Oj-5AN" secondAttribute="centerY" id="fWH-HR-bsw"/>
+                            <constraint firstItem="fCx-7l-h3t" firstAttribute="top" secondItem="Dac-LO-WuN" secondAttribute="bottom" constant="8" id="h9W-aA-4ol"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="actionButton" destination="fCx-7l-h3t" id="gnr-Os-lXM"/>
+                        <outlet property="lunchLabel" destination="8ar-iC-g4V" id="pps-4K-7p6"/>
+                        <outlet property="morningLabel" destination="Lj0-5E-6Za" id="Bui-8U-bs3"/>
+                        <outlet property="timerLabel" destination="pIi-Ji-6Mn" id="32r-OT-f1p"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231.19999999999999" y="33.733133433283363"/>
+        </scene>
+    </scenes>
+</document>

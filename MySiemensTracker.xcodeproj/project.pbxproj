@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		26E1408E1EC690D20011C13E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1408D1EC690D20011C13E /* AppDelegate.swift */; };
-		26E140901EC690D20011C13E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1408F1EC690D20011C13E /* ViewController.swift */; };
+		26E140901EC690D20011C13E /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E1408F1EC690D20011C13E /* HistoryViewController.swift */; };
 		26E140931EC690D20011C13E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E140911EC690D20011C13E /* Main.storyboard */; };
 		26E140951EC690D20011C13E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26E140941EC690D20011C13E /* Assets.xcassets */; };
 		26E140981EC690D20011C13E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E140961EC690D20011C13E /* LaunchScreen.storyboard */; };
 		26E140A31EC690D20011C13E /* MySiemensTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140A21EC690D20011C13E /* MySiemensTrackerTests.swift */; };
 		26E140AE1EC690D20011C13E /* MySiemensTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140AD1EC690D20011C13E /* MySiemensTrackerUITests.swift */; };
+		26E140D21EC694ED0011C13E /* Siemens Sans Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26E140D11EC694ED0011C13E /* Siemens Sans Black.ttf */; };
+		26E140D51EC69CFB0011C13E /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140D41EC69CFB0011C13E /* LogViewController.swift */; };
+		26E140D81EC69EEC0011C13E /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140D71EC69EEC0011C13E /* AppManager.swift */; };
+		26E140DB1EC6A12C0011C13E /* iOSExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140DA1EC6A12C0011C13E /* iOSExtensions.swift */; };
+		26E140E21EC6BA480011C13E /* NotificationCenter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E140C11EC692CA0011C13E /* NotificationCenter.framework */; };
+		26E140E51EC6BA480011C13E /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140E41EC6BA480011C13E /* TodayViewController.swift */; };
+		26E140E81EC6BA480011C13E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26E140E61EC6BA480011C13E /* MainInterface.storyboard */; };
+		26E140EC1EC6BA480011C13E /* Tracker.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 26E140E11EC6BA480011C13E /* Tracker.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26E140F01EC6BDA90011C13E /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140D71EC69EEC0011C13E /* AppManager.swift */; };
+		7CD643ED1EC6C6AF00498B04 /* iOSExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E140DA1EC6A12C0011C13E /* iOSExtensions.swift */; };
+		7CD643F11EC76A9300498B04 /* Siemens Sans Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26E140D11EC694ED0011C13E /* Siemens Sans Black.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,12 +42,33 @@
 			remoteGlobalIDString = 26E140891EC690D20011C13E;
 			remoteInfo = MySiemensTracker;
 		};
+		26E140EA1EC6BA480011C13E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26E140821EC690D20011C13E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26E140E01EC6BA480011C13E;
+			remoteInfo = Tracker;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26E140D01EC692CA0011C13E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				26E140EC1EC6BA480011C13E /* Tracker.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		26E1408A1EC690D20011C13E /* MySiemensTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MySiemensTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E1408D1EC690D20011C13E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		26E1408F1EC690D20011C13E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26E1408F1EC690D20011C13E /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		26E140921EC690D20011C13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26E140941EC690D20011C13E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26E140971EC690D20011C13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +79,17 @@
 		26E140A91EC690D20011C13E /* MySiemensTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MySiemensTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26E140AD1EC690D20011C13E /* MySiemensTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySiemensTrackerUITests.swift; sourceTree = "<group>"; };
 		26E140AF1EC690D20011C13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E140C11EC692CA0011C13E /* NotificationCenter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NotificationCenter.framework; path = System/Library/Frameworks/NotificationCenter.framework; sourceTree = SDKROOT; };
+		26E140D11EC694ED0011C13E /* Siemens Sans Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Siemens Sans Black.ttf"; sourceTree = "<group>"; };
+		26E140D41EC69CFB0011C13E /* LogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LogViewController.swift; path = ../LogViewController.swift; sourceTree = "<group>"; };
+		26E140D71EC69EEC0011C13E /* AppManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		26E140DA1EC6A12C0011C13E /* iOSExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = iOSExtensions.swift; path = MySiemensTracker/iOSExtensions.swift; sourceTree = "<group>"; };
+		26E140E11EC6BA480011C13E /* Tracker.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Tracker.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		26E140E41EC6BA480011C13E /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
+		26E140E71EC6BA480011C13E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		26E140E91EC6BA480011C13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CD643EF1EC6D0A600498B04 /* MySiemensTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MySiemensTracker.entitlements; sourceTree = "<group>"; };
+		7CD643F01EC6D0F300498B04 /* Tracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Tracker.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +114,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26E140DE1EC6BA480011C13E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E140E21EC6BA480011C13E /* NotificationCenter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		26E140811EC690D20011C13E = {
 			isa = PBXGroup;
 			children = (
+				26E140D71EC69EEC0011C13E /* AppManager.swift */,
+				26E140DA1EC6A12C0011C13E /* iOSExtensions.swift */,
 				26E1408C1EC690D20011C13E /* MySiemensTracker */,
 				26E140A11EC690D20011C13E /* MySiemensTrackerTests */,
 				26E140AC1EC690D20011C13E /* MySiemensTrackerUITests */,
+				26E140E31EC6BA480011C13E /* Tracker */,
+				26E140C01EC692CA0011C13E /* Frameworks */,
 				26E1408B1EC690D20011C13E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +145,7 @@
 				26E1408A1EC690D20011C13E /* MySiemensTracker.app */,
 				26E1409E1EC690D20011C13E /* MySiemensTrackerTests.xctest */,
 				26E140A91EC690D20011C13E /* MySiemensTrackerUITests.xctest */,
+				26E140E11EC6BA480011C13E /* Tracker.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,8 +153,11 @@
 		26E1408C1EC690D20011C13E /* MySiemensTracker */ = {
 			isa = PBXGroup;
 			children = (
+				7CD643EF1EC6D0A600498B04 /* MySiemensTracker.entitlements */,
+				26E140D11EC694ED0011C13E /* Siemens Sans Black.ttf */,
+				26E140D41EC69CFB0011C13E /* LogViewController.swift */,
 				26E1408D1EC690D20011C13E /* AppDelegate.swift */,
-				26E1408F1EC690D20011C13E /* ViewController.swift */,
+				26E1408F1EC690D20011C13E /* HistoryViewController.swift */,
 				26E140911EC690D20011C13E /* Main.storyboard */,
 				26E140941EC690D20011C13E /* Assets.xcassets */,
 				26E140961EC690D20011C13E /* LaunchScreen.storyboard */,
@@ -125,6 +184,25 @@
 			path = MySiemensTrackerUITests;
 			sourceTree = "<group>";
 		};
+		26E140C01EC692CA0011C13E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26E140C11EC692CA0011C13E /* NotificationCenter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		26E140E31EC6BA480011C13E /* Tracker */ = {
+			isa = PBXGroup;
+			children = (
+				7CD643F01EC6D0F300498B04 /* Tracker.entitlements */,
+				26E140E41EC6BA480011C13E /* TodayViewController.swift */,
+				26E140E61EC6BA480011C13E /* MainInterface.storyboard */,
+				26E140E91EC6BA480011C13E /* Info.plist */,
+			);
+			path = Tracker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +213,12 @@
 				26E140861EC690D20011C13E /* Sources */,
 				26E140871EC690D20011C13E /* Frameworks */,
 				26E140881EC690D20011C13E /* Resources */,
+				26E140D01EC692CA0011C13E /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				26E140EB1EC6BA480011C13E /* PBXTargetDependency */,
 			);
 			name = MySiemensTracker;
 			productName = MySiemensTracker;
@@ -181,6 +261,23 @@
 			productReference = 26E140A91EC690D20011C13E /* MySiemensTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		26E140E01EC6BA480011C13E /* Tracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26E140ED1EC6BA480011C13E /* Build configuration list for PBXNativeTarget "Tracker" */;
+			buildPhases = (
+				26E140DD1EC6BA480011C13E /* Sources */,
+				26E140DE1EC6BA480011C13E /* Frameworks */,
+				26E140DF1EC6BA480011C13E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tracker;
+			productName = Tracker;
+			productReference = 26E140E11EC6BA480011C13E /* Tracker.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -195,6 +292,11 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = 9BD5CYJ2VD;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					26E1409D1EC690D20011C13E = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -207,6 +309,16 @@
 						DevelopmentTeam = 9BD5CYJ2VD;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 26E140891EC690D20011C13E;
+					};
+					26E140E01EC6BA480011C13E = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9BD5CYJ2VD;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -226,6 +338,7 @@
 				26E140891EC690D20011C13E /* MySiemensTracker */,
 				26E1409D1EC690D20011C13E /* MySiemensTrackerTests */,
 				26E140A81EC690D20011C13E /* MySiemensTrackerUITests */,
+				26E140E01EC6BA480011C13E /* Tracker */,
 			);
 		};
 /* End PBXProject section */
@@ -235,6 +348,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E140D21EC694ED0011C13E /* Siemens Sans Black.ttf in Resources */,
 				26E140981EC690D20011C13E /* LaunchScreen.storyboard in Resources */,
 				26E140951EC690D20011C13E /* Assets.xcassets in Resources */,
 				26E140931EC690D20011C13E /* Main.storyboard in Resources */,
@@ -255,6 +369,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26E140DF1EC6BA480011C13E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CD643F11EC76A9300498B04 /* Siemens Sans Black.ttf in Resources */,
+				26E140E81EC6BA480011C13E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -262,8 +385,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26E140901EC690D20011C13E /* ViewController.swift in Sources */,
+				26E140D51EC69CFB0011C13E /* LogViewController.swift in Sources */,
+				26E140901EC690D20011C13E /* HistoryViewController.swift in Sources */,
 				26E1408E1EC690D20011C13E /* AppDelegate.swift in Sources */,
+				26E140DB1EC6A12C0011C13E /* iOSExtensions.swift in Sources */,
+				26E140D81EC69EEC0011C13E /* AppManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +409,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		26E140DD1EC6BA480011C13E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E140E51EC6BA480011C13E /* TodayViewController.swift in Sources */,
+				26E140F01EC6BDA90011C13E /* AppManager.swift in Sources */,
+				7CD643ED1EC6C6AF00498B04 /* iOSExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -295,6 +431,11 @@
 			isa = PBXTargetDependency;
 			target = 26E140891EC690D20011C13E /* MySiemensTracker */;
 			targetProxy = 26E140AA1EC690D20011C13E /* PBXContainerItemProxy */;
+		};
+		26E140EB1EC6BA480011C13E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26E140E01EC6BA480011C13E /* Tracker */;
+			targetProxy = 26E140EA1EC6BA480011C13E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -313,6 +454,14 @@
 				26E140971EC690D20011C13E /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		26E140E61EC6BA480011C13E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26E140E71EC6BA480011C13E /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -414,9 +563,12 @@
 		26E140B31EC690D20011C13E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySiemensTracker/MySiemensTracker.entitlements;
 				DEVELOPMENT_TEAM = 9BD5CYJ2VD;
 				INFOPLIST_FILE = MySiemensTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bustasari.MySiemensTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -427,9 +579,12 @@
 		26E140B41EC690D20011C13E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MySiemensTracker/MySiemensTracker.entitlements;
 				DEVELOPMENT_TEAM = 9BD5CYJ2VD;
 				INFOPLIST_FILE = MySiemensTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bustasari.MySiemensTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -495,6 +650,36 @@
 			};
 			name = Release;
 		};
+		26E140EE1EC6BA480011C13E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
+				DEVELOPMENT_TEAM = 9BD5CYJ2VD;
+				INFOPLIST_FILE = Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bustasari.MySiemensTracker.Tracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		26E140EF1EC6BA480011C13E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Tracker/Tracker.entitlements;
+				DEVELOPMENT_TEAM = 9BD5CYJ2VD;
+				INFOPLIST_FILE = Tracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = bustasari.MySiemensTracker.Tracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -514,6 +699,7 @@
 				26E140B41EC690D20011C13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E140B51EC690D20011C13E /* Build configuration list for PBXNativeTarget "MySiemensTrackerTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +708,7 @@
 				26E140B71EC690D20011C13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		26E140B81EC690D20011C13E /* Build configuration list for PBXNativeTarget "MySiemensTrackerUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +717,16 @@
 				26E140BA1EC690D20011C13E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26E140ED1EC6BA480011C13E /* Build configuration list for PBXNativeTarget "Tracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26E140EE1EC6BA480011C13E /* Debug */,
+				26E140EF1EC6BA480011C13E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
